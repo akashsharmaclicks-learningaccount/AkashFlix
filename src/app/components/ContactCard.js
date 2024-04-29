@@ -1,6 +1,7 @@
 import styles from "@/app/contact/contact.module.css";
 import { MdEmail, MdVoiceChat, MdForum } from "react-icons/md";
 import Link from "next/link";
+
 const ContactCard = () => {
   return (
     <div className={styles.section}>
@@ -14,7 +15,7 @@ const ContactCard = () => {
             <h2>Email</h2>
             <p>Monday to Friday Expected </p>
             <p className={styles.last_para}>response time: 72 hours </p>
-            <Link href="/">
+            <Link href="mailto:akashflix@maildrop.cc">
               {" "}
               Send Email <span>-&gt;</span>
             </Link>
@@ -50,4 +51,5 @@ const ContactCard = () => {
     </div>
   );
 };
+
 export default ContactCard;
