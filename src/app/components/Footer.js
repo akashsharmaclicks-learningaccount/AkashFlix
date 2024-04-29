@@ -1,11 +1,9 @@
 import React from "react";
 import footerStyles from "@/app/styles/footer.module.css";
 import {
-  FaFacebookF,
   FaTwitter,
   FaInstagram,
   FaLinkedinIn,
-  FaYoutube,
   FaGithub,
 } from "react-icons/fa";
 import Link from "next/link";
@@ -124,15 +122,6 @@ const Footer = () => {
                 <a href="#">Photoshop</a>
               </li>
             </ul>
-            <ul className={`${footerStyles.box} ${footerStyles["input-box"]}`}>
-              <li className={footerStyles.link_name}>Subscribe</li>
-              <li>
-                <input type="text" placeholder="Enter your email" />
-              </li>
-              <li>
-                <input type="button" value="Subscribe" />
-              </li>
-            </ul>
           </div>
         </div>
         <div className={footerStyles["bottom-details"]}>
@@ -140,7 +129,7 @@ const Footer = () => {
             <span className={footerStyles.copyright_text}>
               {" "}
               Copyright © {currentYear}
-              <Link href="/>"> AkashShamaClicks.</Link> All rights reserved{" "}
+              <Link href="/>"> #AkashShama_Clicks.</Link> All rights reserved{" "}
             </span>
             <span className={footerStyles.policy_terms}>
               <Link href="/">Privacy policy</Link>
