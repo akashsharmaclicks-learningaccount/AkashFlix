@@ -16,7 +16,7 @@ const Nav = () => {
             <li className={styles.navbarItem}>
               <Link
                 className={styles.navbarLink}
-                href="#"
+                href="/#"
                 onClick={() => setOpenMenu(false)}
               >
                 Home
