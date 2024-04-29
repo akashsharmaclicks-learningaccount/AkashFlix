@@ -1,11 +1,6 @@
 import React from "react";
 import footerStyles from "@/app/styles/footer.module.css";
-import {
-  FaTwitter,
-  FaInstagram,
-  FaLinkedinIn,
-  FaGithub,
-} from "react-icons/fa";
+import { FaTwitter, FaInstagram, FaLinkedinIn, FaGithub } from "react-icons/fa";
 import Link from "next/link";
 
 export const metadata = {
@@ -21,7 +16,7 @@ const Footer = () => {
           <div className={footerStyles.top}>
             <div className={footerStyles["logo-details"]}>
               {/*<i className={footerStyles.fab fa-slack]></i>*/}
-              <span className={footerStyles.logo_name}>#AkashSharmaClicks</span>
+              <span className={footerStyles.logo_name}>Akash Sharma</span>
             </div>
             <div className={footerStyles[`media-icons`]}>
               <Link
