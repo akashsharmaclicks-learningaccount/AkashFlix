@@ -10,19 +10,14 @@ const mulish = Mulish({
   display: "swap",
 });
 
-const Herosection = ({ title, imageUrl }) => {
+const Herosection = ({ title, paragraph = "From award-winning dramas to blockbuster action movies, we've got you covered. Browse our selection of the latest and greatest movies, and find your new favorite today.", imageUrl }) => {
   return (
     <main className={heroStyles.main_section}>
       <div className={styles.container}>
         <div className={styles.grid_two_section}>
           <div className={heroStyles.hero_content}>
             <h1>{title}</h1>
-            <p>
-              {" "}
-              From award-winning dramas to blockbuster action movies, we&apos;ve
-              got you covered. Browse our selection of the latest and greatest
-              movies, and find your new favorite today.
-            </p>
+            <p>{paragraph}</p>
             <Link href="/movie">
               <button className={mulish.className}>Explore Movies</button>
             </Link>
