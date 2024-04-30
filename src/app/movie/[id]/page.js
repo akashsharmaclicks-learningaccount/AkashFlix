@@ -22,10 +22,19 @@ const Page = async ({ params }) => {
         </h2>
         <div className={styles.card_section}>
           <div>
-            <Image src={main_data.backgroundImage.url} alt={main_data.title} width={600} height={300}/>
+            <Image
+              src={main_data.backgroundImage.url || "/dummy.jpg"}
+              alt={main_data.title}
+              width={848}
+              height={477}
+            />
           </div>
           <div>
             <h1>{main_data.title}</h1>
+            <h3>TYPE: {main_data.type}</h3>
+            <h3>GENRE: {main_data.genres[0].name}</h3>
+            <h3>RELEASED ON: {main_data.releaseYear}</h3>
+
             <p>{main_data.synopsis}</p>
           </div>
         </div>
