@@ -20,7 +20,6 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={mulish.className}>
-    <head><link rel="shortcut icon" href="/logo.png" /></head>
       <body className={inter.className}>
         <Header />
         {children}
