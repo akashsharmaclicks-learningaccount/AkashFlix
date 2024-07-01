@@ -5,11 +5,11 @@ import styles from "@/app/styles/common.module.css";
 const Movie = async () => {
   const url = process.env.RAPID_KEY;
   const options = {
-    method: "GET",
+    method: 'GET',
     headers: {
-      "X-RapidAPI-Key": "889f0497d6msh50e0e94e1d07aeap10eae2jsn15607d025807",
-      "X-RapidAPI-Host": "netflix54.p.rapidapi.com",
-    },
+      'x-rapidapi-key': '889f0497d6msh50e0e94e1d07aeap10eae2jsn15607d025807',
+      'x-rapidapi-host': 'netflix54.p.rapidapi.com'
+    }
   };
   const res = await fetch(url, options);
   const data = await res.json();
